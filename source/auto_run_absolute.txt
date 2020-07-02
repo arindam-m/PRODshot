@@ -1,0 +1,10 @@
+CMD:
+
+"C:\Blender\blender" "C:\Projects\render_automation\PRODshot\source\staging.blend" -b -P "C:\Projects\render_automation\PRODshot\source\__init__.py" -- "C:\Users\main\Desktop\Product_Thumbnails"
+
+
+PowerShell:
+
+C:\Blender\blender "C:\Projects\render_automation\PRODshot\source\staging.blend" -b -P "C:\Projects\render_automation\PRODshot\source\__init__.py" -- "C:\Users\main\Desktop\Product_Thumbnails" 1> null
+
+C:\Blender\blender "C:\Projects\render_automation\PRODshot\source\staging.blend" -P "C:\Projects\render_automation\PRODshot\source\__init__.py" -- "C:\Users\main\Desktop\Product_Thumbnails"
