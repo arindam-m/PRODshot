@@ -14,7 +14,7 @@ def fetch_geo(skp_file):
 
         bpy.ops.import_scene.skp(filepath=skp_file,
                                  # scenes_as_camera=False,
-                                 import_camera=True,
+                                 #  import_camera=True, # SU Active View
                                  reuse_material=True,
                                  max_instance=1000
                                  )

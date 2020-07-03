@@ -12,6 +12,7 @@ def zoom_io(file_path, skp_file):
 
     if len(scenes_to_render) > 0:
         bpy.context.scene.camera = bpy.data.objects[scenes_to_render[0]]
+        bpy.data.cameras[scenes_to_render[0]].lens = 65
         bpy.ops.view3d.camera_to_view_selected()
 
     else:

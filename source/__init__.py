@@ -63,7 +63,7 @@ PROCESS_COUNT = 1
 
 for file in source_files:
 
-    if file.endswith(".skp"):
+    if file.endswith(".skp") or file.endswith(".SKP"):
 
         print(f"\nRunning: Process # {PROCESS_COUNT}")
         print("----------------------")
@@ -96,6 +96,8 @@ for file in source_files:
         import_skp.fetch_geo(source_fpath)
         print("Importing Of SketchUp Data      (Done)")
         # --------------------------------------------- #
+
+        # breakpoint()
 
         # --------------------------------------------- #
         smooth_shading.auto_bsmooth()
@@ -166,7 +168,7 @@ for file in source_files:
         base_max = max(base_x, base_y)
 
         # Giving some room for margin space
-        bpy.ops.transform.resize(value=(1.225, 1.225, 1.225))
+        bpy.ops.transform.resize(value=(1.105, 1.105, 1.105))
 
         # --------------------------------------------- #
         cam_retarget.zoom_io(io_files_path, file)
